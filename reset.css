@@ -1,0 +1,35 @@
+.poiret-one-regular {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+:root {
+    /** COLOR */
+
+    --color-primary: #76412C;
+    --color-secondary: #D29D89;
+    --color-black: black;
+    --color-grise: #9C9C9C;
+
+    /** FONT SIZES */
+
+    --title1: 88px;
+    --title2: ;
+    --paragaph: 16px;
+    --link: 14px;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+    font-weight: 400 !important;
+}

@@ -1,0 +1,75 @@
+#NavBar {
+    padding: 20px 90px
+}
+
+
+.NavBar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavLink-content {
+    justify-content: space-between;
+
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+    }
+
+    a {
+        font-family: "Poiret One", sans-serif;
+        font-size: var(--paragaph);
+        text-decoration: none;
+        cursor: pointer;
+        color: var(--color-grise);
+        font-weight: 400 !important;
+        text-transform: uppercase;
+    }
+}
+
+.NavLink-content ul li a,
+.NavLink-content ul li a:after,
+.NavLink-content ul li a:before {
+    transition: all .5s;
+}
+
+.NavLink-content ul li a:hover {
+    color: var(--color-black);
+}
+
+.NavLink-content ul li a {
+    position: relative;
+    padding: 15px;
+    font-weight: 400 !important;
+}
+
+.NavLink-content ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '';
+    color: transparent;
+    background: var(--color-secondary);
+    height: 1px;
+}
+
+.NavLink-content ul li a:hover:after {
+    width: 100%;
+}
+
+.Line {
+    width: 100%;
+    border: 1px solid #9C9C9C;
+    border-radius: 2px;
+}
