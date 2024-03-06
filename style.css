@@ -12,10 +12,13 @@
 .NavLink-content {
     justify-content: space-between;
 
+
+
     ul {
         display: flex;
         align-items: center;
     }
+
 
     li {
         display: flex;
@@ -33,6 +36,28 @@
         font-weight: 400 !important;
         text-transform: uppercase;
     }
+
+    .horizontal-line {
+        display: none;
+        border: 1px solid #9C9C9C;
+        border-radius: 2px;
+    }
+
+}
+
+.Burger-content {
+    display: none;
+    padding: 5px 5px;
+    cursor: pointer;
+
+}
+
+.Close-content {
+    right: 90px;
+    position: absolute;
+    display: none;
+    padding: 5px 5px;
+    cursor: pointer;
 }
 
 .NavLink-content ul li a,
@@ -73,3 +98,5 @@
     border: 1px solid #9C9C9C;
     border-radius: 2px;
 }
+
+/* NavBar Done !*/

@@ -17,7 +17,9 @@
     --title1: 88px;
     --title2: ;
     --paragaph: 16px;
+    --LinkMobile: 32px;
     --link: 14px;
+
 
 }
 
@@ -28,6 +30,12 @@ body {
     list-style-type: none;
     color: inherit;
 }
+
+body.opacity {
+    background-color: rgb(170, 170, 170);
+
+}
+
 
 li {
     list-style-type: none;
