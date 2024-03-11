@@ -32,7 +32,8 @@ body {
 }
 
 body.opacity {
-    background-color: rgb(170, 170, 170);
+    background-color: #D8D8D8;
+    animation-duration: 1.5s;
 
 }
 
