@@ -20,9 +20,31 @@
         height: 100vh;
         z-index: 1000;
         transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: #9C9C9C;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
+        .Reseau {
+            display: block;
+            width: 106px;
+            padding: 5px 10px;
+            position: absolute;
+            bottom: 104px;
+            left: 88px;
+            right: 50%;
 
+            .titre-rs {
+                font-family: "Poiret One", sans-serif;
+                text-align: center;
+            }
+
+            .Content-rs>img {
+                padding: 10px 5px;
+            }
+
+            .Content-rs {
+                gap: 6px;
+                display: inline-flex;
+            }
+        }
     }
 
 
@@ -87,5 +109,157 @@
         gap: 50px;
     }
 
+
+}
+
+@media (max-width:438px) {
+    #NavBar {
+        padding: 30px 10px
+    }
+
+    .NavLink-content .Reseau {
+        display: block;
+        width: 106px;
+        padding: 5px 10px;
+        position: absolute;
+        bottom: 104px;
+        left: 88px;
+        right: 50%;
+
+        .titre-rs {
+            font-family: "Poiret One", sans-serif;
+            text-align: center;
+        }
+
+        .Content-rs>img {
+            padding: 10px 5px;
+        }
+
+        .Content-rs {
+            gap: 6px;
+            display: inline-flex;
+        }
+    }
+
+    .NavBar-content .NavLink-content ul {
+        position: absolute;
+        top: 20%;
+        left: 29px;
+        right: 29px;
+        bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .Logo-content {
+        width: 60px;
+        height: 60px;
+    }
+
+    .Close-content {
+        position: absolute;
+        top: 40px;
+        right: 10px;
+    }
+
+    .NavBar-content .NavLink-content ul li a {
+        font-size: var(--NavLink);
+
+    }
+
+    .NavBar-content .NavLink-content.active {
+        span:nth-of-type(1) {
+            position: absolute;
+            border: 1px solid #9C9C9C;
+            top: 121px;
+            left: 10px;
+            right: 10px;
+        }
+
+        span:nth-of-type(2) {
+            position: absolute;
+            border: 1px solid #9C9C9C;
+            bottom: 186px;
+            left: 10px;
+            right: 10px;
+        }
+    }
+
+}
+
+@media (max-width:320px) {
+    #NavBar {
+        padding: 30px 10px
+    }
+
+    .NavLink-content .Reseau {
+        display: block;
+        width: 106px;
+        padding: 5px 10px;
+        position: absolute;
+        bottom: 104px;
+        left: 45px;
+        right: 50%;
+
+        .titre-rs {
+            font-family: "Poiret One", sans-serif;
+            text-align: center;
+        }
+
+        .Content-rs>img {
+            padding: 10px 5px;
+        }
+
+        .Content-rs {
+            gap: 6px;
+            display: inline-flex;
+        }
+    }
+
+    .NavBar-content .NavLink-content ul {
+        position: absolute;
+        top: 20%;
+        left: 29px;
+        right: 29px;
+        bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .Logo-content {
+        width: 60px;
+        height: 60px;
+    }
+
+    .Close-content {
+        position: absolute;
+        top: 40px;
+        right: 10px;
+    }
+
+    .NavBar-content .NavLink-content ul li a {
+        font-size: var(--Link);
+
+    }
+
+    .NavBar-content .NavLink-content.active {
+        span:nth-of-type(1) {
+            position: absolute;
+            border: 1px solid #9C9C9C;
+            top: 121px;
+            left: 10px;
+            right: 10px;
+        }
+
+        span:nth-of-type(2) {
+            position: absolute;
+            border: 1px solid #9C9C9C;
+            bottom: 186px;
+            left: 10px;
+            right: 10px;
+        }
+    }
 
 }

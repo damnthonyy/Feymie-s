@@ -10,6 +10,14 @@
 
 }
 
+.Logo-content {
+    background-image: url(media/Logo.svg);
+    object-fit: cover;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+}
+
 .NavLink-content {
     justify-content: space-between;
     transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
@@ -44,6 +52,33 @@
         border: 1px solid #9C9C9C;
         border-radius: 2px;
     }
+
+    .Reseau {
+        display: none;
+        width: 106px;
+        padding: 5px 10px;
+        position: absolute;
+        bottom: 104px;
+        left: 88px;
+        right: 50%;
+
+        .titre-rs {
+            font-family: "Poiret One", sans-serif;
+            text-align: center;
+        }
+
+        .Content-rs>img {
+            padding: 10px 5px;
+        }
+
+        .Content-rs {
+            gap: 6px;
+            display: inline-flex;
+        }
+    }
+
+
+
 
 }
 
