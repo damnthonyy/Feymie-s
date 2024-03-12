@@ -1,5 +1,11 @@
 #NavBar {
-    padding: 20px 90px
+    /* padding: 20px 90px */
+    position: fixed;
+    top: 20px;
+    left: 90px;
+    right: 90px;
+    z-index: 991;
+
 }
 
 
@@ -42,7 +48,7 @@
         font-size: var(--paragaph);
         text-decoration: none;
         cursor: pointer;
-        color: var(--color-grise);
+        color: var(--color-white);
         font-weight: 400 !important;
         text-transform: uppercase;
     }
@@ -133,9 +139,102 @@
 }
 
 .Line {
+    position: fixed;
+    top: 112px;
+    z-index: 991;
     width: 100%;
-    border: 1px solid #9C9C9C;
+    border: 1px solid var(--color-white);
     border-radius: 2px;
 }
 
 /* NavBar Done !*/
+
+
+#Accueil {
+    position: relative;
+    z-index: 899;
+
+
+
+}
+
+.Hero {
+    position: absolute;
+    top: 241px;
+    left: 197px;
+    padding: 0 40px;
+}
+
+.Hero .Hero-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+    align-items: baseline;
+    /* gap: 38px; */
+
+    span:nth-of-type(2) {
+        position: absolute;
+        top: 349px;
+        left: 954px;
+        right: 0px;
+    }
+
+    .Cta {
+        position: absolute;
+        top: 441px;
+        font-family: "Poiret One", sans-serif;
+        font-size: var(--LinkMobile);
+        padding: 10px 26px;
+        cursor: pointer;
+        border-radius: 10px;
+        text-align: center;
+        border: none;
+        background-color: var(--color-white);
+        color: var(--color-secondary);
+        text-transform: uppercase;
+    }
+}
+
+.Hero .Hero-content .Welcome-t {
+    font-family: "Poiret One", sans-serif;
+    font-size: var(--paragaph);
+    color: var(--color-white);
+}
+
+.Hero .Hero-content .Citation {
+    font-family: "Poiret One", sans-serif;
+    font-size: var(--title1);
+    color: var(--color-white);
+}
+
+.Hero .Hero-content .Name-c {
+    font-family: "Poiret One", sans-serif;
+    font-size: var(--link);
+    color: var(--color-white);
+}
+
+#Accueil>video {
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Accueil Done !*/
+/* A propos Done !*/
+#A-propos {
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Nos produits Done !*/
+#Nos-produits {
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+/* Contacts Done !*/
+#Contacts {
+    height: 100vh;
+    background-color: cornflowerblue;
+}

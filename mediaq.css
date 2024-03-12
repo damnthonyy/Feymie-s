@@ -13,7 +13,7 @@
 
 
     .NavLink-content {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: -100%;
         width: 0;
@@ -51,12 +51,13 @@
 
     .NavBar-content .NavLink-content ul li a {
         font-size: var(--LinkMobile);
+        color: var(--color-black);
 
     }
 
     .NavBar-content .NavLink-content.active {
         background-color: rgb(255, 255, 255);
-        position: absolute;
+        position: fixed;
 
         top: 0;
         right: 0;
@@ -109,12 +110,82 @@
         gap: 50px;
     }
 
+    .Hero {
+        position: absolute;
+        top: 241px;
+        left: 51px;
+        padding: 0 40px;
+    }
+
+    .Hero .Hero-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 38px;
+        align-items: baseline;
+        /* gap: 38px; */
+
+        span:nth-of-type(2) {
+            position: absolute;
+            top: 231px;
+            left: 506px;
+            right: 0px;
+        }
+
+        .Cta {
+            position: absolute;
+            top: 221px;
+            font-family: "Poiret One", sans-serif;
+            font-size: var(--LinkMobile);
+            padding: 10px 26px;
+            cursor: pointer;
+            border-radius: 10px;
+            text-align: center;
+            border: none;
+            background-color: var(--color-white);
+            color: var(--color-secondary);
+            text-transform: uppercase;
+        }
+    }
+
+    .Hero .Hero-content .Welcome-t {
+        font-family: "Poiret One", sans-serif;
+        font-size: var(--paragaph);
+        color: var(--color-white);
+    }
+
+    .Hero .Hero-content .Citation {
+        font-family: "Poiret One", sans-serif;
+        font-size: var(--title2);
+        color: var(--color-white);
+    }
+
+    .Hero .Hero-content .Name-c {
+        font-family: "Poiret One", sans-serif;
+        font-size: var(--link);
+        color: var(--color-white);
+    }
 
 }
 
+
+
 @media (max-width:438px) {
     #NavBar {
-        padding: 30px 10px
+        /* padding: 30px 10px */
+        position: fixed;
+        top: 30px;
+        left: 10px;
+        right: 10px;
+
+    }
+
+    .Line {
+        z-index: 990;
+        top: 112px;
+        position: fixed;
+        width: 100%;
+        border: 1px solid #9C9C9C;
+        border-radius: 2px
     }
 
     .NavLink-content .Reseau {
@@ -165,10 +236,20 @@
 
     .NavBar-content .NavLink-content ul li a {
         font-size: var(--NavLink);
+        color: var(--color-black);
 
     }
 
     .NavBar-content .NavLink-content.active {
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        z-index: 1000;
+        transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
         span:nth-of-type(1) {
             position: absolute;
             border: 1px solid #9C9C9C;
@@ -186,11 +267,80 @@
         }
     }
 
+    .Hero {
+        position: absolute;
+        top: 241px;
+        left: 15px;
+        padding: 0 10px;
+    }
+
+    .Hero .Hero-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 38px;
+        align-items: baseline;
+        /* gap: 38px; */
+
+        span:nth-of-type(2) {
+            position: absolute;
+            font-size: var(--link);
+            top: 123px;
+            left: 301px;
+            right: 0px;
+        }
+
+        .Cta {
+            position: absolute;
+            top: 145px;
+            font-family: "Poiret One", sans-serif;
+            font-size: var(--paragaph);
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            text-align: center;
+            border: none;
+            background-color: var(--color-white);
+            color: var(--color-secondary);
+            text-transform: uppercase;
+        }
+    }
+
+    .Hero .Hero-content .Welcome-t {
+        font-family: "Poiret One", sans-serif;
+        font-size: var(--paragaph);
+        color: var(--color-white);
+    }
+
+    .Hero .Hero-content .Citation {
+        font-family: "Poiret One", sans-serif;
+        font-size: var(--LinkMobile);
+        color: var(--color-white);
+    }
+
+    .Hero .Hero-content .Name-c {
+        font-family: "Poiret One", sans-serif;
+        font-size: var(--link);
+        color: var(--color-white);
+    }
+
 }
 
 @media (max-width:320px) {
     #NavBar {
-        padding: 30px 10px
+        /* padding: 30px 10px */
+        position: fixed;
+        top: 30px;
+        left: 10px;
+        right: 10px;
+    }
+
+    .Line {
+        z-index: 990;
+        top: 112px;
+        position: fixed;
+        width: 100%;
+        border: 1px solid #9C9C9C;
+        border-radius: 2px
     }
 
     .NavLink-content .Reseau {
@@ -241,10 +391,20 @@
 
     .NavBar-content .NavLink-content ul li a {
         font-size: var(--Link);
+        color: var(--color-black);
 
     }
 
     .NavBar-content .NavLink-content.active {
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        z-index: 1000;
+        transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
         span:nth-of-type(1) {
             position: absolute;
             border: 1px solid #9C9C9C;
@@ -260,6 +420,62 @@
             left: 10px;
             right: 10px;
         }
+    }
+
+    .Hero {
+        position: absolute;
+        top: 158px;
+        left: 15px;
+        padding: 0 10px;
+    }
+
+    .Hero .Hero-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: baseline;
+        /* gap: 38px; */
+
+        span:nth-of-type(2) {
+            position: absolute;
+            font-size: var(--dlink);
+            top: 56px;
+            left: 206px;
+            right: 0px;
+        }
+
+        .Cta {
+            position: absolute;
+            top: 93px;
+            font-family: "Poiret One", sans-serif;
+            font-size: var(--paragaph);
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            text-align: center;
+            border: none;
+            background-color: var(--color-white);
+            color: var(--color-secondary);
+            text-transform: uppercase;
+        }
+    }
+
+    .Hero .Hero-content .Welcome-t {
+        font-family: "Poiret One", sans-serif;
+        font-size: var(--Link);
+        color: var(--color-white);
+    }
+
+    .Hero .Hero-content .Citation {
+        font-family: "Poiret One", sans-serif;
+        font-size: var(--tittle3);
+        color: var(--color-white);
+    }
+
+    .Hero .Hero-content .Name-c {
+        font-family: "Poiret One", sans-serif;
+        font-size: var(--dlink);
+        color: var(--color-white);
     }
 
 }

@@ -11,15 +11,17 @@
     --color-secondary: #D29D89;
     --color-black: black;
     --color-grise: #9C9C9C;
+    --color-white: #FFFF;
 
     /** FONT SIZES */
 
-    --title1: 88px;
-    --title2: ;
-    --paragaph: 16px;
+    --title1: 110px;
+    --title2: 60px;
+    --tittle3: 20px --paragaph: 16px;
     --LinkMobile: 32px;
     --NavLink: 23px;
     --link: 14px;
+    --dlink: 10px;
 
 
 }
