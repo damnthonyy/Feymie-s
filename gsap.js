@@ -7,7 +7,7 @@ gsap.to($Propos, {
     y: "+=-100vh",
     scrollTrigger: {
         trigger: $Acc,
-        /* markers: true, */
+        markers: true,
         start: "30%; 20%",
         end: "60%; 45%",
         scrub: 2,
