@@ -6,6 +6,7 @@
     right: 90px;
     z-index: 991;
 
+
 }
 
 
@@ -153,6 +154,7 @@
 #Accueil {
     position: relative;
     z-index: 899;
+    height: 100vh;
 
 
 
@@ -224,17 +226,21 @@
 /* A propos Done !*/
 #A-propos {
     height: 100vh;
-    background-color: rgb(255, 255, 255);
+    z-index: 900;
+    background-color: bisque;
+    position: relative;
 }
 
 /* Nos produits Done !*/
 #Nos-produits {
     height: 100vh;
     background-color: aquamarine;
+    position: relative;
 }
 
 /* Contacts Done !*/
 #Contacts {
     height: 100vh;
     background-color: cornflowerblue;
+    position: relative;
 }
