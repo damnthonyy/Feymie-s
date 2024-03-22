@@ -1,11 +1,12 @@
 gsap.registerPlugin(ScrollTrigger);
 
 const $Acc = document.querySelector("#Accueil");
+const $Wrapper = document.querySelector("#wrapper");
 const $Propos = document.querySelector("#A-propos");
 const $a = document.querySelectorAll("#scrollY");
 
 
-gsap.to($Propos, {
+gsap.to($Wrapper, {
     y: "+=-100vh",
     scrollTrigger: {
         trigger: $Acc,
@@ -23,8 +24,9 @@ gsap.to($a, {
     scrollTrigger: {
         trigger: $Acc,
         start: "20%; 20%",
-        markers: true,
+        markers: false,
         end: "20%",
+        duration: "1s",
         toggleActions: "play none reverse none",
     }
 }

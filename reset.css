@@ -32,6 +32,7 @@ body {
     box-sizing: border-box;
     list-style-type: none;
     color: inherit;
+    height: auto;
 }
 
 body.opacity {

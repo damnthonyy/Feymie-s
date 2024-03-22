@@ -8,19 +8,19 @@ function Toggle() {
     $NavBar.classList.toggle("active");
 }
 
-function Opacity() {
+/* function Opacity() {
     $body = document.body;
     $body.classList.toggle("opacity");
-}
+} */
 
 $Close.onclick = function () {
     Toggle();
-    Opacity();
+    /*  Opacity(); */
 }
 
 $hamburger.onclick = function () {
 
     Toggle();
-    Opacity();
+    /*   Opacity(); */
 
 }
