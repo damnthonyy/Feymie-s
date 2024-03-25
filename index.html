@@ -13,78 +13,42 @@
     <link rel='stylesheet' type='text/css' media='screen' href='Css/produit.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='Css/contacts.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='Mediaq/NavBar.css'>
+    <link rel='stylesheet' type="type/text" media='screen' href='Font/Roboto'>
     <link rel="icon" type="image/svg" sizes="16x16" href="media/Logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <div id="NavBar">
-        <div class="NavBar-content">
-            <div class="Logo-content">
-                <!--  <img src="media/Logo.svg" alt="logo" /> -->
-            </div>
-            <div class="NavLink-content">
-                <span class="horizontal-line"></span>
-                <ul>
-                    <li><a id="scrollY">Accueil </a></li>
-                    <li><a id="scrollY"> À propos</a></li>
-                    <li><a id="scrollY"> Nos produits</a></li>
-                    <li><a id="scrollY">Contacts </a></li>
-                </ul>
-                <span class="horizontal-line"></span>
-                <div class="Reseau">
-                    <h5 class="titre-rs">Nos reseaux</h5>
-                    <div class="Content-rs">
-                        <img src="media/Ig.svg" />
-                        <img src="media/Fb.svg" />
-                        <img src="media/Mail.svg" />
-                    </div>
-                </div>
-                <div class="Close-content">
-                    <img src="media/close.svg" alt="menu" class="Close" />
-                </div>
-            </div>
-            <div class="Burger-content">
-                <img src="media/open.svg" alt="menu" class="Open" />
-            </div>
+    <div id="header">
 
+        <div class="header-content">
+            <div class="header-content-s-between">
+                <div class="header-logo-wrapper">
+                    <!-- <a href="Media/Logo.svg" alt="logo" class="logo" /> -->
+                </div>
+                <a href="btn-menu" class="btn-menu" alt="#">
+                    Menu
+                </a>
+                <div class="nav-link-overlay">
+
+                </div>
+            </div>
         </div>
 
     </div>
-
-    <section id="Accueil">
-        <video id="My-video" autoplay muted loop>
-            <source src="media/video.mp4" type="video/mp4" />
-        </video>
-        <!--  <div class="Hero">
-            <div class="Hero-content">
-                <span class="Welcome-t">Bienvenue chez feymie’s,</span>
-                <h1 class="Citation">“ Il n’y a pas de honte dans la beauté noire”</h1>
-                <span class="Name-c">Lupita Nyongo.</span>
-                <button class="Cta"> prendre rdv </button>
-            </div>
-        </div> -->
-    </section>
-    <div id="wrapper">
-        <section id="A-propos"></section>
-        <section id="Nos-produits"></section>
-        <section id="Contacts"></section>
-    </div>
-
-
-
-
-    <!-- NavBar Done ! -->
 
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src='main.js'></script>
-    <script src="gsap.js"></script>
+    <script src='Js/main.js'></script>
+    <script src="Js/gsap.js"></script>
 </body>
 
 </html>

@@ -1,148 +1,51 @@
-#NavBar {
-    /* padding: 20px 90px */
+#header {
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    padding: 0 5vw;
-    z-index: 991;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-white);
+    z-index: 1000;
+    opacity: 1;
 }
 
-
-.NavBar-content {
+.header-content {
     display: flex;
+    padding: 2vh 8vw;
+    justify-content: right;
+    /* gap: 20rem; */
     align-items: center;
+}
+
+.header-content-s-between {
+    display: flex;
     justify-content: space-between;
-
+    width: 50vw;
+    align-items: center;
 }
 
-.Logo-content {
-    background-image: url(../media/Logo.svg);
-    object-fit: cover;
-    background-size: cover;
-    width: 80px;
-    height: 80px;
-}
+.header-logo-wrapper {
+    position: relative;
 
-.NavLink-content {
-    justify-content: space-between;
-    transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
-
-
-
-    ul {
-        display: flex;
-        align-items: center;
-    }
-
-
-    li {
-        display: flex;
-        align-items: center;
-        padding: 10px;
-
-    }
-
-    a {
-        font-family: "Poiret One", sans-serif;
-        font-size: var(--paragaph);
-        text-decoration: none;
-        cursor: pointer;
-        color: var(--color-white);
-        font-weight: 400 !important;
-        text-transform: uppercase;
-    }
-
-    .horizontal-line {
-        display: none;
-        border: 1px solid #9C9C9C;
-        border-radius: 2px;
-    }
-
-    .Reseau {
-        display: none;
-        width: 106px;
-        padding: 5px 10px;
-        position: absolute;
-        bottom: 104px;
-        left: 88px;
-        right: 50%;
-
-        .titre-rs {
-            font-family: "Poiret One", sans-serif;
-            text-align: center;
-        }
-
-        .Content-rs>img {
-            padding: 10px 5px;
-        }
-
-        .Content-rs {
-            gap: 6px;
-            display: inline-flex;
-        }
-    }
-
-
-
-
+    width: 100px;
+    height: 100px;
+    background-image: url("../Media/Logo.svg");
 }
 
 
-.Burger-content {
-    display: none;
-    padding: 5px 5px;
+.btn-menu {
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    position: relative;
+    /* left: 15vw; */
+    letter-spacing: 10%;
+    font-size: 16px;
     cursor: pointer;
-
-}
-
-.Close-content {
-    position: absolute;
-    top: 40px;
-    right: 90px;
-    display: none;
-    padding: 5px 5px;
-    cursor: pointer;
-}
-
-.NavLink-content ul li a,
-.NavLink-content ul li a:after,
-.NavLink-content ul li a:before {
-    transition: all .5s;
-}
-
-.NavLink-content ul li a:hover {
+    list-style-type: none;
     color: var(--color-black);
 }
 
-.NavLink-content ul li a {
-    position: relative;
-    padding: 15px;
-    font-weight: 400 !important;
-}
-
-.NavLink-content ul li a:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '';
-    color: transparent;
-    background: var(--color-secondary);
-    height: 1px;
-}
-
-.NavLink-content ul li a:hover:after {
-    width: 100%;
-}
-
-.Line {
-    position: fixed;
-    top: 112px;
-    z-index: 991;
-    width: 100%;
-    border: 1px solid var(--color-white);
-    border-radius: 2px;
+.nav-link-overlay {
+    display: none;
 }

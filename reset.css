@@ -15,12 +15,12 @@
 
     /** FONT SIZES */
 
-    --title1: 110px;
-    --title2: 60px;
-    --tittle3: 20px --paragaph: 16px;
+    --h1: 80px;
+    --h2: 60px;
+    --h3: 20px --paragaph: 16px;
     --LinkMobile: 32px;
-    --NavLink: 23px;
-    --link: 14px;
+    --p1: 16px;
+    --p2: 14px;
     --dlink: 10px;
 
 
@@ -33,16 +33,4 @@ body {
     list-style-type: none;
     color: inherit;
     height: auto;
-}
-
-body.opacity {
-    background-color: #D8D8D8;
-    animation-duration: 1.5s;
-
-}
-
-
-li {
-    list-style-type: none;
-    font-weight: 400 !important;
 }

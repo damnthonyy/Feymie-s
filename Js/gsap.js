@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
+/* gsap.registerPlugin(ScrollTrigger);
 
 const $Acc = document.querySelector("#Accueil");
 const $Wrapper = document.querySelector("#wrapper");
@@ -30,4 +30,4 @@ gsap.to($a, {
         toggleActions: "play none reverse none",
     }
 }
-)
+) */
