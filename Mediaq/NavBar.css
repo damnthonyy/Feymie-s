@@ -6,4 +6,12 @@
 
 @media(700px<=width<=1200px) {}
 
-@media (320px<=width <=700px) {}
+@media (320px<=width <=700px) {
+    .header-content-s-between {
+        width: 55vw;
+    }
+
+    .btn-menu {
+        font-size: 14px;
+    }
+}
