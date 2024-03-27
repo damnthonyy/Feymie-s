@@ -4,7 +4,30 @@
 
 /* Tablette*/
 
-@media(700px<=width<=1200px) {}
+@media(700px<=width<=1200px) {
+    .nav-link-content {
+        padding: 4.8vh 1.667vw;
+    }
+
+    .nav-link {
+        gap: 40px;
+    }
+
+    .nav-link>.link {
+        font-size: var(--h2);
+    }
+
+    .rs-ad-content {
+        gap: 1.8rem;
+    }
+
+    .rs-ad-content>.rs,
+    .ad {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+}
 
 @media (320px<=width <=700px) {
     .header-content-s-between {
@@ -13,5 +36,33 @@
 
     .btn-menu {
         font-size: 14px;
+    }
+
+    .nav-link-content {
+        padding: 6.714vh 1.429vw;
+    }
+
+    .nav-link {
+        gap: 31px;
+    }
+
+    .icon-link {
+        width: 25px;
+        height: 25px;
+    }
+
+    .nav-link>.link {
+        font-size: var(--h3);
+    }
+
+    .rs-ad-content {
+        gap: 5.265rem;
+    }
+
+    .rs-ad-content>.rs,
+    .ad {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
     }
 }

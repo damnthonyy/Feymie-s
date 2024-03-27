@@ -47,11 +47,24 @@
 }
 
 .nav-link-overlay {
-    display: flex;
+    display: none;
     position: absolute;
-    top: 0;
+    /* top: 0; */
     left: 0;
     right: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav-link-overlay.isActive {
+    display: flex;
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    top: 0;
     bottom: 0;
     background-color: rgb(255, 255, 255);
     height: 100vh;
@@ -65,7 +78,7 @@
 }
 
 .nav-link-content {
-    padding: 5vh 10vw;
+    padding: 5vh 6.5vw;
     width: 100%;
 }
 
@@ -88,6 +101,66 @@
     text-decoration: none;
     text-transform: none;
 
+}
+
+.icon-link {
+    width: 85px;
+    height: 85px;
+}
+
+.nav-link-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+}
+
+.nav-link-bt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rs-ad-content {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.rs {
+    display: flex;
+    gap: .8rem
+}
+
+.rs-link {
+    font-family: "Roboto", sans-serif;
+    font-size: var(--p1);
+    color: var(--color-black);
+    font-weight: lighter;
+}
+
+.ad {
+    display: flex;
+    gap: .8rem;
+}
+
+.ad-link {
+    font-family: "Roboto", sans-serif;
+    font-size: var(--p1);
+    color: var(--color-black);
+    font-weight: lighter;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: .8rem;
+}
+
+.contact-link {
+    font-family: "Roboto", sans-serif;
+    font-size: var(--p1);
+    font-weight: lighter;
+    color: var(--color-black);
 }
 
 .btn-close-menu {
